@@ -37,3 +37,7 @@ src/main/resources/application-aws.properties
 
 ### VS Code ###
 .vscode/
+
+*.yml
+application.properties
+
