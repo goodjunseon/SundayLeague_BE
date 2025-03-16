@@ -1,6 +1,7 @@
 package com.sundayleague.SundayLeague.dto;
 
 
+import com.sundayleague.SundayLeague.entity.MemberEntity;
 import lombok.*;
 
 @Getter
@@ -14,4 +15,8 @@ public class MemberDTO {
     private String memberName; // 이름
     private String memberTel; // 전화번호
     private String memberDate; // 생년월일 YYYY-MM-DD
+
+//    public MemberEntity toMemberEntity(MemberDTO memberDTO) {
+//        return null;
+//    }
 }

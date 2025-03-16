@@ -6,5 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface MemberRepository extends JpaRepository<MemberEntity, Long> {
+ // JpaRepository<MemberEntity, Long> MemberEntity의 PK 자료형은 Long으로 설정한 것임.
 
 }
