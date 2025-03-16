@@ -27,6 +27,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	runtimeOnly 'mysql:mysql-connector-java' // 데이터베이스 드라이버 의존성 추가하기
 	implementation 'mysql:mysql-connector-java:8.0.33' // 이거 없으면 DB연결 안되서 안켜짐
+	implementation 'org.hibernate:hibernate-core:6.6.8.Final'
 
 	// lombok
 	compileOnly 'org.projectlombok:lombok'
