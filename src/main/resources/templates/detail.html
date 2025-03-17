@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <title>detail</title>
+</head>
+<body>
+<table>
+  <tr>
+    <th>id</th>
+    <th>email</th>
+    <th>password</th>
+    <th>name</th>
+    <th>tel</th>
+    <th>date</th>
+  </tr>
+  <tr>
+    <td th:text="${member.id}"></td> <!-- 넘겨주는 attributeName의 값과 .id는 dto에 정해준 필드명임 MemberController보면 됨 -->
+    <td th:text="${member.memberEmail}"></td>
+    <td th:text="${member.memberPassword}"></td>
+    <td th:text="${member.memberName}"></td>
+    <td th:text="${member.memberTel}"></td>
+    <td th:text="${member.memberDate}"></td>
+  </tr>
+</table>
+</body>
+</html>
