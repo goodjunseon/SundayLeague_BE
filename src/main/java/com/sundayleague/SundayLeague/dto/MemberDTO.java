@@ -4,6 +4,8 @@ package com.sundayleague.SundayLeague.dto;
 import com.sundayleague.SundayLeague.entity.MemberEntity;
 import lombok.*;
 
+import java.util.Date;
+
 @Getter
 @Setter
 @NoArgsConstructor // 생성자 생성 알아서 해줌, final 변수 그냥 선언 가능
@@ -16,7 +18,17 @@ public class MemberDTO {
     private String memberTel; // 전화번호
     private String memberDate; // 생년월일 YYYY-MM-DD
 
-//    public MemberEntity toMemberEntity(MemberDTO memberDTO) {
-//        return null;
-//    }
+    public static MemberDTO toMemberDTO(MemberEntity memberEntity) {
+
+        MemberDTO memberDTO = new MemberDTO();
+
+        memberDTO.setId(memberEntity.getId());
+        memberDTO.setMemberEmail(memberEntity.getMemberEmail());
+        memberDTO.setMemberPassword(memberEntity.getMemberPassword());
+        memberDTO.setMemberName(memberEntity.getMemberName());
+        memberDTO.setMemberTel(memberEntity.getMemberTel());
+        memberDTO.setMemberDate(memberEntity.getMemberDate());
+
+        return memberDTO;
+    }
 }
